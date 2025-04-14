@@ -48,30 +48,3 @@ if __name__ == "__main__":
 '''
 with open("/content/IP_Check_app/app.py", "w") as f:
     f.write(code)
-
-token = "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"  # <- paste your token here
-username = "Sairupesh24"
-
-repo_url = f"https://{username}:{token}@github.com/{username}/IP_Check_app.git"
-
-!git push {repo_url}
-
-# Commented out IPython magic to ensure Python compatibility.
-# %%writefile requirements.txt
-# Flask==2.2.5
-#
-
-# Commented out IPython magic to ensure Python compatibility.
-# %%writefile Procfile
-# web: gunicorn app:app
-#
-
-# Commented out IPython magic to ensure Python compatibility.
-# %%writefile requirements.txt
-# Flask==2.2.5
-# gunicorn==20.1.0
-#
-
-!git add requirements.txt Procfile
-!git commit -m "Add deployment files for Render"
-!git push https://Sairupesh24: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>@github.com/Sairupesh24/IP_Check_app.git
