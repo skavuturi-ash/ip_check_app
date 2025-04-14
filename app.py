@@ -1,4 +1,3 @@
-
 from flask import Flask, request, redirect, make_response
 
 app = Flask(__name__)
@@ -13,7 +12,7 @@ def home():
     else:
         ip = request.remote_addr
 
-    if ip == ALLOWED_IP:
+    if ip in ALLOWED_IP:
         return redirect(GOOGLE_FORM_URL, code=302)
     else:
         html = f"""
