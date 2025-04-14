@@ -3,7 +3,7 @@ from flask import Flask, request, redirect, make_response
 
 app = Flask(__name__)
 
-ALLOWED_IP = ["183.82.122.72", "183.82.123.115"
+ALLOWED_IP = ["183.82.122.72", "183.82.123.115"]
 GOOGLE_FORM_URL = "https://www.appsheet.com/start/60d54c8c-988f-4fca-9920-3fb605139ba1"
 
 @app.route("/")
